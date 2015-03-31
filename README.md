@@ -6,7 +6,7 @@ YesDice is an online dice throwing web-app. It's meant for rpg and strategy game
 
 Current status
 --------------
-The current status is early alpha. The barebone structure for the app. A message is printed the browser console, confirming successful app initiation.
+The current status is early alpha. The barebone structure for the app is there. A message is printed the browser console, confirming successful app initiation.
 
 Roadmap
 -------
@@ -26,5 +26,5 @@ Technical goals
 
 Background
 ----------
-I'm a programmer by day and tabletop gamer by night. I want to combine the two. Also, the lack of a really nice online dice roller for strategy games suprised me. Personal learning goals are writing well structured OO JavaScript and perhaps using a front-end JS framework.
+I'm a programmer by day and tabletop gamer by night. I want to combine the two. Also, the lack of a really nice online dice roller for strategy games surprised me. Personal learning goals are writing well structured OO JavaScript and perhaps using a front-end JS framework.
 
