@@ -21,7 +21,9 @@ Technical goals
 ---------------
 - Use as much native JavaScript as possible. Keep it lean. Older browser are not supported.
 - Keep everything on the client-side. This rule may be broken when the app gets to a very advanced stage.
-- Use library's sparingly.
+- Use library's sparingly. Currently looking at:
+--- Require.js for managing the js libs
+--- Angular.js for one-page app functionality
 
 
 Background
