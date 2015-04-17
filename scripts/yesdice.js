@@ -21,27 +21,36 @@ function yesDice(){
 
     }
 
-    /** diceSide object, represents a side or facing of a die */
-    function diceSide() {
 
-    }
 
 }
 
 
-/** dice object, represents a single die */
+/** Dice object, represents a single die */
 function Dice()
 {
     this.diceSides = [];
 }
-
 Dice.prototype = {
     constructor: Dice,
 
+    addSide:function(value){
+        this.diceSides.push(new DiceSide(value));
+    },
     roll:function(){
-        consoleLog(getRandomInt(1,6));
+        var resultSide = getRandomInt(0,this.diceSides.length -1);
+        return this.diceSides[resultSide].value;
     }
 }
+
+/** DiceSide object, represents a side or facing of a die */
+function DiceSide(value) {
+    this.value = value;
+}
+DiceSide.prototype = {
+    constructor: DiceSide
+}
+
 
 
 

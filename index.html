@@ -21,9 +21,18 @@
   	<script type="text/javascript" src="scripts/yesdice.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function(){
-            var d6 = new Dice();
-            d6.roll();
+            // @todo future app initiation
         });
+
+        var d6 = new Dice();
+        d6.addSide(1);
+        d6.addSide(2);
+        d6.addSide(3);
+        d6.addSide(4);
+        d6.addSide(5);
+        d6.addSide(6);
+        consoleLog(d6.roll());
+
     </script>
     </body>
 </html>

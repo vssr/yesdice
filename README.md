@@ -6,11 +6,11 @@ YesDice is an online dice throwing web-app. It's meant for rpg and strategy game
 
 Current status
 --------------
-The current status is early alpha. The barebone structure for the app is there. A message is printed the browser console, confirming successful app initiation.
+The current status is early alpha. The barebone structure for the app is there. A single d6 is rolled and the result sent to the browser console.
 
 Roadmap
 -------
-1. Be able to cast / roll a dice object, d6, and get a random result
+1.<del> Be able to cast / roll a dice object, d6, and get a random result</del> - done!
 2. Roll multiple d6
 3. Add several standard dice: d3, d4, d8, d10, d12, d20
 4. Add option to create your own dice.
