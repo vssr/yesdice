@@ -21,24 +21,30 @@ function yesDice(){
 
     }
 
-    /** dice object, represents a single die */
-    function dice(){
-
-
-        function roll(){
-            var result = getRandomInt(1,6);
-            consoleLog(result);
-        }
-
-
-    }
-
     /** diceSide object, represents a side or facing of a die */
     function diceSide() {
 
     }
 
 }
+
+
+/** dice object, represents a single die */
+function Dice()
+{
+    this.diceSides = [];
+}
+
+Dice.prototype = {
+    constructor: Dice,
+
+    roll:function(){
+        consoleLog(getRandomInt(1,6));
+    }
+}
+
+
+
 
 /** @section randomization functions */
 
