@@ -4,26 +4,39 @@
  */
 
 
-/** yesDice lib initiation object */
-function yesDice(){
-
+/** YesDice app object */
+function YesDice(){
     // current games
-    var diceGames = undefined;
+    this.diceGames = [];
+    // available dice
+    this.diceBox = undefined;
+}
+YesDice.prototype = {
+    constructor : YesDice,
 
-
-    /** main diceGame object, represents one session of dice throwing*/
-    function diceGame(){
-
+    addDiceGame:function(diceGame){
+        this.diceGames.push(diceGame);
+    },
+    setDiceBox:function(diceBox){
+        this.diceBox = diceBox;
     }
-
-    /** dicePool object, represents dice on the 'table' in this diceGame */
-    function dicePool(){
-
-    }
-
-
 
 }
+
+
+
+/** main DiceGame object, represents one session of dice throwing*/
+function DiceGame(){
+    this.dicePool = undefined;
+}
+DiceGame.prototype = {
+    constructor: DiceGame,
+
+    setDicePool:function(dicePool){
+       this.dicePool = dicePool;
+    }
+}
+
 
 /** DicePool object, represents dice on the 'table' in this diceGame */
 function DicePool(){
