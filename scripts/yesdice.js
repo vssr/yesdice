@@ -25,6 +25,19 @@ function yesDice(){
 
 }
 
+/** dicePool object, represents dice on the 'table' in this diceGame */
+function DicePool(){
+    this.dices = [];
+}
+DicePool.prototype = {
+    constructor: Dice,
+
+    addDice:function(dice,number){
+       for (var i = 0; i <= number; i++) {
+           this.dices.push(dice);
+       }
+    }
+}
 
 /** Dice object, represents a single die */
 function Dice()
