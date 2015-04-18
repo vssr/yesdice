@@ -24,6 +24,9 @@
             // @todo future app initiation
         });
 
+        // debugging dicegame objects
+
+        // Create a six sided die
         var d6 = new Dice();
         d6.addSide(1);
         d6.addSide(2);
@@ -31,7 +34,11 @@
         d6.addSide(4);
         d6.addSide(5);
         d6.addSide(6);
-        consoleLog(d6.roll());
+
+        // add 3d6 to a new DicePool and roll them
+        var DicePool = new DicePool();
+        DicePool.addDice(d6,3);
+        DicePool.roll();
 
     </script>
     </body>

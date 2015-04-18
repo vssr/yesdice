@@ -25,7 +25,7 @@ function yesDice(){
 
 }
 
-/** dicePool object, represents dice on the 'table' in this diceGame */
+/** DicePool object, represents dice on the 'table' in this diceGame */
 function DicePool(){
     this.dices = [];
 }
@@ -33,9 +33,14 @@ DicePool.prototype = {
     constructor: Dice,
 
     addDice:function(dice,number){
-       for (var i = 0; i <= number; i++) {
+       for (var added = 1; added <= number; added++) {
            this.dices.push(dice);
        }
+    },
+    roll:function(){
+        this.dices.forEach(function(dice) {
+            consoleLog(dice.roll());
+        });
     }
 }
 
