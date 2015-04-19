@@ -82,6 +82,12 @@ DiceSide.prototype = {
     constructor: DiceSide
 }
 
+/** @section Specific dices (d4,d6,d8,d20 et cetera.) inheriting from Dice() object */
+
+function D4() {
+
+}
+
 
 
 

@@ -11,7 +11,7 @@ The current status is early alpha. The barebone structure for the app is there. 
 Roadmap
 -------
 1.<del> Be able to cast / roll a dice object, d6, and get a random result</del> - done!
-2. Roll multiple d6
+2. <del>Roll multiple d6</del> - done!
 3. Add several standard dice: d3, d4, d8, d10, d12, d20
 4. Add option to create your own dice.
 5. Add option to save dice / dice throwing session
